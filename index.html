@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Bootstrap compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Crystal Game</title>
+</head>
+
+<body>
+	
+	<div class="page-header">
+	  <h1>Crystal Game!</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+			  <div class="panel-heading">How to Play!</div>
+				<ul class="list-group">
+				  <li class="list-group-item">You are given a random number at the start of the game.</li>
+				  <li class="list-group-item">There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+				  <li class="list-group-item">You win the game by matching your total score to a random number. You lose the game if your total score surpasses the random number.</li>
+				  <li class="list-group-item">The value of each crystal is hidden from you until you click on it.</li>
+				  <li class="list-group-item">The value of the crystals will change after each game.</li>
+				</ul>
+			</div>
+		</div>
+
+	<div class="well well-lg">
+		<div class="row">
+			<div class="col-md-6">
+				Random Number:	<span id="randomNumber" class="badge"></span>
+			</div>
+
+			<div class="col-md-3">
+			<p>Wins: <span id="wins" class="badge"></span></p>
+						<!-- Your score -->
+				
+			</div>
+
+			<div class="col-md-3">
+					<!-- Wins/Losses -->
+					
+					<p>Losses: <span id="losses" class="badge"></span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<!-- Crystal buttons -->
+		<div class="col-md-6 col-md-offset-3 image-container">
+			<div type="button" class="btn btn-default" id="red">
+				<img src="images/red.jpg" alt="Red Crystal" height=100px width=100px>
+			</div>
+			<div type= "button" class="btn btn-default" id="blue">
+				<img src="images/blue.jpg" alt="Blue Crystal" height=100px width=100px>
+			</div>
+			<div type="button" class="btn btn-default" id="yellow">
+				<img src="images/yellow.jpg" alt="Yellow Crystal" height=100px width=100px>
+			</div>
+			<div type="button" class="btn btn-default" id="green">
+				<img src="images/green.jpg" alt="Green Crystal" height=100px width=100px>
+			</div>
+		</div>
+				
+	</div>
+	<div class="well well-lg">
+		<div class="row">
+			<div class="col-md-12">
+			Your Total score is: <span id="score" class="badge"></span>
+			</div>
+		</div>
+	</div>
+<div>
+	<!-- Jquery -->
+	<script src="javascript/jquery-1.12.1.min.js"></script>
+	<!-- Bootstrap compiled and minified Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Javascript -->
+	<script src='javascript/game.js'></script>
+</body>
+
+<footer>
+		<p style= text align=center>Aisha Durrani RBC 2016</p>
+		</footer>
+</html>
